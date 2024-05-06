@@ -22,8 +22,8 @@ async def wait_random(max_delay: int = 10) -> float:
 
 async def wait_n(n: int, max_delay: int = 10) -> List[float]:
     """
-    Takes:n (int),max_delay (int)
-    Returns:List[float] of all the delays 
+    Takes: n (int),max_delay (int)
+    Returns: List[float] of all the delays 
     """
     tasks = []
     for i in range(n):
