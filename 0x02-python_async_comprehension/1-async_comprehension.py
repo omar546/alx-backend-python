@@ -4,7 +4,7 @@
 import asyncio
 from typing import List
 
-async_generator = __import__("0-async_generator").async_generator
+file = __import__("0-async_generator").async_generator
 
 
 async def async_comprehension() -> List[float]:
@@ -14,5 +14,5 @@ async def async_comprehension() -> List[float]:
     Returns:
         List[float]: Float values collected from 'async_generator'.
     """
-    result = [i async for i in async_generator()]
+    result = [i async for i in file()]
     return result
